@@ -58,4 +58,9 @@ jupyter notebook
 ---
 ## 🚀 Author Information
 Nikhitha Nagalla
+
 nikhithanagalla@ufl.edu
+
+Applied Data Science
+
+University of Florida
