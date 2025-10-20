@@ -40,6 +40,22 @@ Large, diverse natural images to learn color priors. Used to train Stage-2 to ad
 Train: 95% of COCO-train; Val: 5% of COCO-train; Test: COCO-val (5k)
 
 Loaded by URL with on-disk cache in Colab (or you can download zips once)
+you can access the dataset from following link https://huggingface.co/datasets/nickpai/coco2017-colorization/viewer?views%5B%5D=train
 
-You can access the dataset from the following link link(https://huggingface.co/datasets/nickpai/coco2017-colorization/viewer?views%5B%5D=train)
+
 ---
+
+## 🚀 Running Locally
+
+```bash
+# Clone this repository
+git clone https://github.com/<your-username>/refocus.git
+cd refocus
+
+# Open jupyter notebook
+jupyter notebook
+ ```
+---
+## 🚀 Author Information
+Nikhitha Nagalla
+nikhithanagalla@ufl.edu
