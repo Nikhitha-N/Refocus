@@ -23,3 +23,23 @@ REFocus solves this with a **luminance-first conditional colorization pipeline**
 - Deliver an intuitive, drag-and-drop **Streamlit web app** with side-by-side “Before/After” previews.
 
 ---
+📦 Datasets
+
+### Restoration — HIDE (Human-Aware Motion Deblurring), Kaggle
+Paired blurred ↔ sharp street/person scenes. Used to train Stage-1 on the brightness image (grayscale).
+
+Train/Val: ~90/10 from HIDE train; Test: HIDE test
+
+Patches: 256×256 with paired transforms (same crop/flip for both images)
+
+you can the dataset from the link https://www.kaggle.com/datasets/darthvader4067/hideblur
+
+### Colorization — MS-COCO 2017 (via Hugging Face metadata)
+Large, diverse natural images to learn color priors. Used to train Stage-2 to add colors when the input is grayscale.
+
+Train: 95% of COCO-train; Val: 5% of COCO-train; Test: COCO-val (5k)
+
+Loaded by URL with on-disk cache in Colab (or you can download zips once)
+
+You can access the dataset from the following link link(https://huggingface.co/datasets/nickpai/coco2017-colorization/viewer?views%5B%5D=train)
+---
