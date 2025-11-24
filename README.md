@@ -89,6 +89,19 @@ jupyter notebook
 - UI: progress indicator and batch mode are planned.
 
 ---
+## 🖼️ Sample Outputs (UI)
+
+**Stage 1 — Deblur/Restore (right = output)**  
+![UI — empty state](sandbox:/mnt/data/158db87c-91f9-457b-b065-c0f69cd38053.jpg)
+
+**Stage 1 result**  
+![UI — Stage 1 result](sandbox:/mnt/data/a8821776-3794-4f80-a6af-de0bae8ac680.jpg)
+
+**Stage 2 result (colorization / final)**  
+![UI — Stage 2 result](sandbox:/mnt/data/bb51e889-9baa-4af0-87fa-846853d57908.jpg)
+
+--- 
+
 ## 📝 Notes: Train vs. Use Pretrained
 
 **Fast start (recommended): use pretrained weights**
