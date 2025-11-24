@@ -93,8 +93,8 @@ jupyter notebook
 
 **Fast start (recommended): use pretrained weights**
 1. Download/place the checkpoints in `models/`:
-   - `models/deblurgan_v2_L_best.pt`   # Stage-1 (luminance deblurring)
-   - `models/unet_colorizer_best.pt`   # Stage-2 (L→ab colorization)
+   - `models/deblurganv2_brightness_best.pt`   # Stage-1 (luminance deblurring)
+   - `models/colorization_model.pt`   # Stage-2 (L→ab colorization)
 2. Launch the UI (or notebook) and run inference directly:
    - Interface.ipynb: It is the file for UI.
 
