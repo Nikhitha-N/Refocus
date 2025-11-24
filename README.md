@@ -72,7 +72,6 @@ cd refocus
 jupyter notebook
  ```
 ---
-Summary table
 
 **Summary table**
 
@@ -81,8 +80,35 @@ Summary table
 | DeblurGAN-v2 (L) | HIDE (90/10 + test)        | Test content-loss ≈ **0.114**                   | Stable after **50 epochs**     |
 | U-Net Colorizer  | COCO (95/5 + val2017 test) | **MSE 0.0054**, **PSNR 24.32 dB**, **SSIM 0.9180** | Train–val gap ~epoch **25–30** |
 
+---
+⚠️ Known Issues
+
+- Large images require tiling; seam-aware overlap-add planned.
+- Colorization can overfit after ~25–30 epochs; needs stronger regularization and broader palette diversity.
+- Rare palettes may appear muted; identity/cycle tuning helps if using the CycleGAN variant.
+- UI: progress indicator and batch mode are planned.
 
 ---
+### 📝 Notes: Train vs. Use Pretrained
+
+**Fast start (recommended): use pretrained weights**
+1. Download/place the checkpoints in `models/`:
+   - `models/deblurgan_v2_L_best.pt`   # Stage-1 (luminance deblurring)
+   - `models/unet_colorizer_best.pt`   # Stage-2 (L→ab colorization)
+2. Launch the UI (or notebook) and run inference directly:
+   - Interface.ipynb: It is the file for UI.
+
+**Train (or fine-tune) the models**
+1. Prepare datasets (HIDE for deblurring, COCO for colorization) per the README.
+2. Open the training notebooks and run all cells:
+   - Stage-1: `Notebooks/image-restoration.ipynb` (DeblurGAN on L channel)
+   - Stage-2: `Notebooks/Colorization.ipynb` (U-Net L→ab)
+3. New checkpoints will be saved under `models/`. Update the UI/notebooks to point to your new `.pt` files.
+
+> Tip: If you only need deblurring, you can skip Stage-2 entirely. If your input is grayscale, enable Stage-2 for colorization.
+
+---
+
 ## 🚀 Author Information
 Nikhitha Nagalla|
 nikhithanagalla@ufl.edu|
