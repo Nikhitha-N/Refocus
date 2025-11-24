@@ -114,7 +114,6 @@ HIDE (Human-Aware Motion Deblurring) — follow Kaggle license.
 
 MS-COCO 2017 — follow dataset license.
 
-DeblurGAN / DeblurGAN-v2, U-Net, CycleGAN — full IEEE citations are in Reports/.
 ---
 ## 🚀 Author Information
 Nikhitha Nagalla|
