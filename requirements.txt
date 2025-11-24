@@ -1,0 +1,40 @@
+# REFocus (Deblur + Optional Colorization) requirements
+# Tested with Python 3.10/3.11. For GPU, install the matching CUDA-enabled torch wheel from pytorch.org if needed.
+
+# --- Core ML stack
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+
+# --- Numerics & image I/O
+numpy==1.26.4
+opencv-python==4.10.0.84
+scikit-image==0.24.0
+Pillow==10.4.0
+imageio==2.34.1
+
+# --- Training & metrics
+tqdm==4.66.4
+matplotlib==3.9.0
+scikit-learn==1.5.1
+torchmetrics==1.4.0
+lpips==0.1.4
+kornia==0.7.2
+einops==0.8.0
+
+# --- Data & datasets
+datasets==2.21.0
+huggingface-hub==0.24.6
+pyyaml==6.0.2
+# COCO API (Windows vs others)
+pycocotools==2.0.8; platform_system != "Windows"
+pycocotools-windows==2.0.0.2; platform_system == "Windows"
+
+# --- UI (either/or; both ok)
+streamlit==1.37.0
+gradio==4.44.0
+
+# --- Dev / notebooks (optional but handy)
+jupyterlab==4.2.5
+ipykernel==6.29.5
+rich==13.7.1
