@@ -74,9 +74,13 @@ jupyter notebook
 ---
 Summary table
 
-Component	Dataset / Split	Key Metric(s)	Notes
-DeblurGAN-v2 (L)	HIDE (90/10 + test)	Test content-loss ≈ 0.114	Stable after 50 epochs
-U-Net Colorizer	COCO (95/5 + val2017)	MSE 0.0054, PSNR 24.32 dB, SSIM 0.9180	Train–val gap indicates overfitting ~epoch 25–30
+**Summary table**
+
+| Component         | Dataset / Split            | Key Metric(s)                                   | Notes                          |
+|------------------|----------------------------|--------------------------------------------------|--------------------------------|
+| DeblurGAN-v2 (L) | HIDE (90/10 + test)        | Test content-loss ≈ **0.114**                   | Stable after **50 epochs**     |
+| U-Net Colorizer  | COCO (95/5 + val2017 test) | **MSE 0.0054**, **PSNR 24.32 dB**, **SSIM 0.9180** | Train–val gap ~epoch **25–30** |
+
 
 ---
 ## 🚀 Author Information
