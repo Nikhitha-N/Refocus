@@ -108,7 +108,14 @@ jupyter notebook
 > Tip: If you only need deblurring, you can skip Stage-2 entirely. If your input is grayscale, enable Stage-2 for colorization.
 
 ---
+## 🤝 Acknowledgments
 
+HIDE (Human-Aware Motion Deblurring) — follow Kaggle license.
+
+MS-COCO 2017 — follow dataset license.
+
+DeblurGAN / DeblurGAN-v2, U-Net, CycleGAN — full IEEE citations are in Reports/.
+---
 ## 🚀 Author Information
 Nikhitha Nagalla|
 nikhithanagalla@ufl.edu|
