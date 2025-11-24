@@ -24,6 +24,7 @@ REFocus solves this with a **luminance-first conditional colorization pipeline**
 
 ---
 🔎 Repository Layout
+```text
 .
 ├─ Notebooks/
 │  ├─ image-restoration.ipynb      # DeblurGAN (L-channel) training/eval
@@ -35,6 +36,7 @@ REFocus solves this with a **luminance-first conditional colorization pipeline**
 ├─ Reports/                         # IEEE-format deliverables
 ├─ requirements.txt
 └─ README.md
+```
 ---
 
 📦 Datasets
