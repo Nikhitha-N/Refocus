@@ -92,7 +92,7 @@ jupyter notebook
 ## 🖼️ Sample Outputs (UI)
 
 **Stage 1 — Deblur/Restore (right = output)**  
-![UI — empty state](sandbox:/mnt/data/158db87c-91f9-457b-b065-c0f69cd38053.jpg)
+![UI — empty state](Results/UI_before1.jpg)
 
 **Stage 1 result**  
 ![UI — Stage 1 result](sandbox:/mnt/data/a8821776-3794-4f80-a6af-de0bae8ac680.jpg)
