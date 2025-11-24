@@ -23,7 +23,7 @@ REFocus solves this with a **luminance-first conditional colorization pipeline**
 - Deliver an intuitive, drag-and-drop **Streamlit web app** with side-by-side “Before/After” previews.
 
 ---
-🔎 Repository Layout
+## 🔎 Repository Layout
 ```text
 .
 ├─ Notebooks/
@@ -39,7 +39,7 @@ REFocus solves this with a **luminance-first conditional colorization pipeline**
 ```
 ---
 
-📦 Datasets
+## 📦 Datasets
 
 ### Restoration — HIDE (Human-Aware Motion Deblurring), Kaggle
 Paired blurred ↔ sharp street/person scenes. Used to train Stage-1 on the brightness image (grayscale).
@@ -73,7 +73,7 @@ jupyter notebook
  ```
 ---
 
-**Summary table**
+## **Summary table**
 
 | Component         | Dataset / Split            | Key Metric(s)                                   | Notes                          |
 |------------------|----------------------------|--------------------------------------------------|--------------------------------|
@@ -81,7 +81,7 @@ jupyter notebook
 | U-Net Colorizer  | COCO (95/5 + val2017 test) | **MSE 0.0054**, **PSNR 24.32 dB**, **SSIM 0.9180** | Train–val gap ~epoch **25–30** |
 
 ---
-⚠️ Known Issues
+## ⚠️ Known Issues
 
 - Large images require tiling; seam-aware overlap-add planned.
 - Colorization can overfit after ~25–30 epochs; needs stronger regularization and broader palette diversity.
@@ -89,7 +89,7 @@ jupyter notebook
 - UI: progress indicator and batch mode are planned.
 
 ---
-### 📝 Notes: Train vs. Use Pretrained
+## 📝 Notes: Train vs. Use Pretrained
 
 **Fast start (recommended): use pretrained weights**
 1. Download/place the checkpoints in `models/`:
