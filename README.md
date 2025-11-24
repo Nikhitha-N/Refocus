@@ -111,15 +111,9 @@ jupyter notebook
 
 ## 🚀 Author Information
 Nikhitha Nagalla|
-nikhithanagalla@ufl.edu|
-Applied Data Science|
-University of Florida
 
----
-📣 Citation
-@misc{refocus2025,
-  title   = {REFocus: Real-world Motion Blur Recovery \& Optional Colorization},
-  author  = {Nagalla, Nikhitha},
-  year    = {2025},
-  note    = {GitHub repository: https://github.com/<your-username>/refocus}
-}
+nikhithanagalla@ufl.edu|
+
+Applied Data Science|
+
+University of Florida
