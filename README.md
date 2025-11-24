@@ -23,6 +23,20 @@ REFocus solves this with a **luminance-first conditional colorization pipeline**
 - Deliver an intuitive, drag-and-drop **Streamlit web app** with side-by-side “Before/After” previews.
 
 ---
+🔎 Repository Layout
+.
+├─ Notebooks/
+│  ├─ image-restoration.ipynb      # DeblurGAN (L-channel) training/eval
+│  └─ Colorization.ipynb            # U-Net colorization (L → ab) training/eval
+├─ UI/
+│  ├─ Interface.ipynb                    # Streamlit app
+├─ models/                          # Saved weights/checkpoints
+├─ Results/                         # Curves, sample outputs, panels
+├─ Reports/                         # IEEE-format deliverables
+├─ requirements.txt
+└─ README.md
+---
+
 📦 Datasets
 
 ### Restoration — HIDE (Human-Aware Motion Deblurring), Kaggle
@@ -55,6 +69,13 @@ cd refocus
 # Open jupyter notebook
 jupyter notebook
  ```
+---
+Summary table
+
+Component	Dataset / Split	Key Metric(s)	Notes
+DeblurGAN-v2 (L)	HIDE (90/10 + test)	Test content-loss ≈ 0.114	Stable after 50 epochs
+U-Net Colorizer	COCO (95/5 + val2017)	MSE 0.0054, PSNR 24.32 dB, SSIM 0.9180	Train–val gap indicates overfitting ~epoch 25–30
+
 ---
 ## 🚀 Author Information
 Nikhitha Nagalla|
