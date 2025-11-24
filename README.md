@@ -91,14 +91,14 @@ jupyter notebook
 ---
 ## 🖼️ Sample Outputs (UI)
 
-**Stage 1 — Deblur/Restore (right = output)**  
+**Stage 1 — Home page UI**  
 ![UI — empty state](Results/UI_before1.jpg)
 
 **Stage 1 result**  
-![UI — Stage 1 result](sandbox:/mnt/data/a8821776-3794-4f80-a6af-de0bae8ac680.jpg)
+![UI — Stage 1 Deblur result](Results/UI_img1.jpg)
 
 **Stage 2 result (colorization / final)**  
-![UI — Stage 2 result](sandbox:/mnt/data/bb51e889-9baa-4af0-87fa-846853d57908.jpg)
+![UI — Stage 2 Colorization result](Results/UI_img2.jpg)
 
 --- 
 
